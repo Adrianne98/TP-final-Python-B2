@@ -19,6 +19,7 @@ def grid():
     return [[0 for _ in range(columns)] for _ in range(rows)]
 
     
+for row in grid():
 
     print(row)
 print("Grid created successfully!") if grid() else print("Failed to create grid.")
