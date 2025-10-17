@@ -17,13 +17,3 @@ input_rows = get_valid_input("Enter number of rows: ")
 input_columns = get_valid_input("Enter number of columns: ")
 
 print("Loading...")
-
-def grid(rows, columns):
-    return [[0 for _ in range(columns)] for _ in range(rows)]
-
-grid_data = grid(input_rows, input_columns)
-
-for row in grid_data:
-    print(row)
-
-print("Grid created successfully!") if grid_data else print("Failed to create grid.")
