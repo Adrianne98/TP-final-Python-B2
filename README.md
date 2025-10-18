@@ -18,7 +18,7 @@ Le jeu se déroule sur une grille de cellules pouvant être soit vivantes, soit 
 
 🧱 Technologies utilisées
 
-Langage : [Python ]
+Langage : [Python,Json ]
 
 🚀 Lancer le projet
 🔧 Prérequis
