@@ -1,5 +1,5 @@
 import display_grid
-
+import DetectionBoucle
 def grid():
     min_size = 5
     max_size = 63
