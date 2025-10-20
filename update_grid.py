@@ -2,6 +2,7 @@ import random
 import display_grid
 import DetectionBoucle
 import generad_grid
+import time
 
 # 🔸 Création de la grille initiale avec des cellules aléatoires (vivantes = 1, mortes = 0)
 def create_grid(rows, cols):
@@ -58,3 +59,9 @@ if __name__ == "__main__":
     print("\nNouvelle génération :")
     for row in new_grid:
         print(row)
+while True:
+    print("\nNouvelle itération :")
+    grid = next_generation(grid)
+    for row in grid:
+        print(row)
+    time.sleep(0.5)  # Pause entre chaque retour terminal
