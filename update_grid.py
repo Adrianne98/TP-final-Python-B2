@@ -1,5 +1,7 @@
 import random
 import display_grid
+import DetectionBoucle
+import generad_grid
 
 # 🔸 Création de la grille initiale avec des cellules aléatoires (vivantes = 1, mortes = 0)
 def create_grid(rows, cols):
