@@ -13,7 +13,7 @@ def get_valid_input(dialog, min_size=5, max_size=63):
         except ValueError:
             print("Error: Please enter a valid number (digits only).")
 
-input_rows = get_valid_input("Enter number of rows: ")
-input_columns = get_valid_input("Enter number of columns: ")
+
+input_columns = input_rows = get_valid_input("Enter grid size (rows = columns): ")
 
 print("Loading...")
