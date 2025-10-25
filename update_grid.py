@@ -4,6 +4,8 @@ import DetectionBoucle
 import generad_grid
 import time
 
+previous_states = set()
+
 # 🔸 Création de la grille initiale avec des cellules aléatoires (vivantes = 1, mortes = 0)
 def create_grid(rows, cols):
     """Crée une grille rows x cols avec des cellules aléatoirement vivantes ou mortes."""
@@ -60,8 +62,19 @@ if __name__ == "__main__":
     for row in new_grid:
         print(row)
 while True:
+    state = DetectionBoucle.grid_to_tuple(grid)
+
+    if DetectionBoucle.detect_loop(previous_states, state):
+        print("Configuration stable ou boucle détectée. Arrêt.")
+        break
+
+    previous_states.add(state)
+
     print("\nNouvelle itération :")
-    grid = next_generation(grid)
     for row in grid:
         print(row)
-    time.sleep(0.5)  # Pause entre chaque retour terminal
+
+    grid = next_generation(grid)
+    time.sleep(1.5)  # Pause pour visualiser les changements
+
+    
