@@ -21,6 +21,9 @@ Le jeu se déroule sur une grille de cellules pouvant être soit vivantes, soit 
 Langage : [Python,Json ]
 
 🚀 Lancer le projet
+
+Lancé le programe de puis le fichier "update_grid.py"
+
 🔧 Prérequis
 
 [Python 3.x ]
@@ -36,7 +39,7 @@ cd TP-final-Python-B2
 Si besoin
 
 # Lancer le jeu
-python main.py
+python update_grid.py
 
 
 💡 Adapte les commandes ci-dessus selon ton environnement.
@@ -45,16 +48,18 @@ python main.py
 
 📁 Structure du projet
 jeu-de-la-vie/
-├── main.py              # Fichier principal
-├── data.py              # Logique du jeu
-├── grid.py              # Gestion de la grille
-├── cell.py             # Fonctions utilitaires
-└── README.md            # Ce fichier
+├── update_grid.py          # Fichier principal
+├── display.py              # Menu for selection grid
+├── update_grid.py          # Gestion de la grille
+├── detectionboucle.py      # Fonctions utilitaires
+└── README.md               # Ce fichier
 
 ✅ Fonctions implémentées
 
- Initialisation aléatoire de la grille
+ Initialisation de taille personaliser de la grille
 
- Mise à jour automatique des générations
+ Mise à jour automatique des générations de grille
 
- Sauvegarde/chargement de grilles
+ Sauvegarde automatique / chargement de grilles
+ 
+
